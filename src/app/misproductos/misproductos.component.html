@@ -1,0 +1,10 @@
+<h1>Productos:</h1>
+<div class="container">
+    <div *ngFor="let item of misProductos" class="main">
+        <img class="imagenes" src="{{item.thumbnail}}" alt="imagen">
+        <hr>
+        <h2>{{item.title}}</h2>
+        <h3>ARS{{item.price}}</h3>
+        <button>Detalle</button>
+    </div>
+</div>

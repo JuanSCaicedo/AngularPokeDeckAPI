@@ -1,0 +1,45 @@
+.title {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    background-color: yellow;
+    padding: 20px;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    font-size: x-large;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+li:hover {
+    cursor: pointer;
+    color: green;
+}
+
+@media screen and (max-width: 767px) {
+
+    /* Estilos para dispositivos con un ancho máximo de 767px (móviles) */
+    .nav {
+        flex-direction: column;
+        /* Cambiar la dirección a columna para móviles */
+        align-items: center;
+        /* Centrar los elementos */
+    }
+
+    .nav li {
+        display: block;
+        margin-bottom: 10px;
+        /* Espacio entre elementos en columnas */
+    }
+}

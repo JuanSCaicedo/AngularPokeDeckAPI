@@ -1,0 +1,19 @@
+<div class="universo">
+    <h1>Productos:</h1>
+    <div class="flex-container">
+        <!-- Usa currentProductos en lugar de currentItems -->
+        <div *ngFor="let item of currentPokemons" class="caja">
+            <img [src]="item.imagen" alt="imagen">
+            <hr>
+            <h3>Nombre: {{item.nombre}}</h3>
+            <h3>Peso: {{item.peso}}</h3>
+            <button>Ver más</button>
+        </div>
+    </div>
+    <div class="pagination">
+        <button (click)="previousPage()">Anterior</button>
+        <!-- Usa totalPagesProductos en lugar de totalPages -->
+        <span>{{currentPage}} / {{totalPagesPokemons}}</span>
+        <button (click)="nextPage()">Siguiente</button>
+    </div>
+</div>
